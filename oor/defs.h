@@ -77,7 +77,7 @@ typedef struct htable_nonces_ htable_nonces_t;
 #define DEFAULT_RLOC_PROBING_RETRIES            2
 #define DEFAULT_RLOC_PROBING_RETRIES_INTERVAL   5   /* Interval in seconds between RLOC probing retries  */
 
-#define DEFAULT_DATA_CACHE_TTL                  10
+#define DEFAULT_DATA_CACHE_TTL                  1
 #define DEFAULT_SELECT_TIMEOUT                  1000/* ms */
 
 #define FIELD_AFI_LEN                    2
