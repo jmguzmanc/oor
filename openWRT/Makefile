@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=oor
 PKG_REV:=8834361ed7d0cf5826989d26ee96264b138bca7a
 PKG_VERSION:=1.1.1
-PKG_RELEASE:=3/WS1
+PKG_RELEASE:=3-WS1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=git@github.com:jmguzmanc/oor.git
