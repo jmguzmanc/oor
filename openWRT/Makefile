@@ -13,7 +13,7 @@ PKG_VERSION:=1.1.1
 PKG_RELEASE:=3/WS1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=git://github.com/OpenOverlayRouter/oor.git
+PKG_SOURCE_URL:=git@github.com:jmguzmanc/oor.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=$(PKG_REV)
