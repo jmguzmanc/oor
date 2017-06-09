@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=oor
 PKG_REV:=7a7383970ed3b23358b2b49aaeacfd5cfd1b5266
 PKG_VERSION:=1.1.1
-PKG_RELEASE:=3-WS1
+PKG_RELEASE:=3-WS2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=git@github.com:jmguzmanc/oor.git
@@ -53,7 +53,7 @@ define Package/oor/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/oor/oor $(1)/usr/sbin/
 	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_CONF) $(PKG_BUILD_DIR)/openWRT/oor.uci.example $(1)/etc/config/oor
+	$(INSTALL_CONF) $(PKG_BUILD_DIR)/openWRT/oor.uci.example $(1)/etc/config/oor.example
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/openWRT/openwrt.init.script $(1)/etc/init.d/oor
 endef
