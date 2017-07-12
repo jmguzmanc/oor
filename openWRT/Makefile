@@ -45,7 +45,7 @@ endef
 
 
 define Build/Compile
-	$(call Build/Compile/Default,platform=openwrt)
+	$(call Build/Compile/Default,platform=openwrt CFLAGS="-Wall -std=gnu89 -g -I/usr/include/libxml2 -D_GNU_SOURCE=1")
 endef
 
 
